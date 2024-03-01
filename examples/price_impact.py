@@ -36,11 +36,11 @@ def usdt_to_vxv_v2():
     # NOTE: Not sure why this differs from the quote in the UI?
     #       Getting -27% in the UI for 10 USDT, but this returns >95%
     #       The slippage for v3 (in example below) returns correct results.
-    print(f"Impact for buying VXV on v2 with {qty / 10**8} USDT:  {_perc(impact)}")
+    //print(f"Impact for buying VXV on v2 with {qty / 10**8} USDT:  {_perc(impact)}")
 
-    qty = 13900 * 10**8
+    qty = 13900 * 10**8 *54325345
     impact = uniswap.estimate_price_impact(usdt, vxv, qty, route=route)
-    print(f"Impact for buying VXV on v2 with {qty / 10**8} USDT:  {_perc(impact)}")
+    //print(f"Impact for buying VXV on v2 with {qty / 10**8} USDT:  {_perc(impact)}")
 
 
 def eth_to_vxv_v3():
