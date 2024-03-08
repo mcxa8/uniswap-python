@@ -39,7 +39,7 @@ def check_approval(
         # Approve both tokens, if needed
         if token:
             is_approved = self._is_approved(token)
-            # logger.warning(f"Approved? {token}: {is_approved}")
+            logger.warning(f"Approved? {token}: {is_approved}")
             if not is_approved:
                 self.approve(token)
         return method(self, *args, **kwargs)
